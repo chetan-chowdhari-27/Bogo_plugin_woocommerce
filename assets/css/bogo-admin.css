@@ -1,0 +1,166 @@
+/**
+ * BOGO Promotion Styles
+ * Add to your theme or plugin stylesheet.
+ */
+
+/* Dropdown on Product Detail */
+.dropdown-option:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* BOGO Status Toggle */
+.bogo-status-toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.bogo-status-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.bogo-status-toggle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.bogo-status-toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.bogo-status-toggle input:checked + .slider {
+    background-color: #4caf50;
+}
+
+.bogo-status-toggle input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+/* Generic Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* BOGO Discount Container */
+.awdr-discount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.awdr-discount-heading,
+.awdr-discount-content {
+    width: 50%;
+}
+
+/* Tooltip */
+.bogo-tooltip {
+    font-size: 0.85em;
+    color: #888;
+}
+
+/* Switch UI – BOGO Styled */
+.bogo-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.bogo-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.bogo-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.bogo-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.bogo-switch input:checked + .bogo-slider {
+    background-color: #48c774; /* Bulma green */
+}
+
+.bogo-switch input:checked + .bogo-slider:before {
+    transform: translateX(26px);
+}
